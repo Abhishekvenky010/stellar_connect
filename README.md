@@ -59,21 +59,23 @@ npm run dev
 ## Screenshots
 
 ### Wallet Connected State
-![Wallet Connected](docs/screenshots/wallet-connected.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4fd13aea-e993-4a3c-8b63-74dd3256ca6b" />
+
 - The header displays the connected wallet address and current XLM balance
 - The Disconnect button is visible
 
 ### Balance Displayed
-![Balance Displayed](docs/screenshots/balance-displayed.png)
+
 - The connected wallet's XLM balance is shown next to the truncated public key in the header
 
 ### Successful Testnet Transaction
-![Successful Transaction](docs/screenshots/successful-transaction.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/de96d202-077d-47d4-ab39-a176c2b27847" />
+
 - The transaction form shows a green success banner after submission
 - A link to the transaction hash on Stellar Expert is provided
 
 ### Transaction Result Shown to User
-![Transaction Result](docs/screenshots/transaction-result.png)
+
 - Success/failure state is clearly indicated with color-coded feedback
 - The transaction hash or error message is displayed to the user
 
