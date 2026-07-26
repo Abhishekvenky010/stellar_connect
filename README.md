@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Stellar Connect - Simple Payment dApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beginner-friendly React dApp built on the Stellar Testnet for sending XLM payments. This project demonstrates wallet integration, balance fetching, transaction submission, and user feedback using the Freighter wallet and Tailwind CSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Freighter Wallet Setup**: Seamless integration with Freighter browser extension
+- **Wallet Connection & Disconnection**: Connect and disconnect wallet from the UI
+- **Real-time Balance Display**: View your XLM balance directly in the header
+- **Send XLM Payments**: Transfer XLM to any Stellar testnet address
+- **Transaction Feedback**: Visual success/failure states with transaction hashes and explorer links
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 19
+- Vite 8
+- Tailwind CSS v4
+- @stellar/freighter-api
+- @stellar/stellar-sdk
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- Node.js >= 18
+- npm or yarn
+- [Freighter Wallet](https://www.freighter.app/) browser extension
+- Freighter wallet set to **Testnet** mode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Instructions
 
-### `npm run build`
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/stellar_connect.git
+cd stellar_connect
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+```bash
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open your browser and navigate to `http://localhost:5173`
 
-### `npm run eject`
+5. Make sure Freighter is installed, unlocked, and switched to Testnet mode
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Click **Connect Wallet** in the top-right corner
+2. Approve the connection in the Freighter popup
+3. Your address and XLM balance will appear in the header
+4. Enter a destination Stellar address and amount in the send form
+5. Click **Send XLM** and approve the transaction in Freighter
+6. View the transaction result on Stellar Expert explorer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Wallet Connected State
+![Wallet Connected](docs/screenshots/wallet-connected.png)
+- The header displays the connected wallet address and current XLM balance
+- The Disconnect button is visible
 
-## Learn More
+### Balance Displayed
+![Balance Displayed](docs/screenshots/balance-displayed.png)
+- The connected wallet's XLM balance is shown next to the truncated public key in the header
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Successful Testnet Transaction
+![Successful Transaction](docs/screenshots/successful-transaction.png)
+- The transaction form shows a green success banner after submission
+- A link to the transaction hash on Stellar Expert is provided
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Transaction Result Shown to User
+![Transaction Result](docs/screenshots/transaction-result.png)
+- Success/failure state is clearly indicated with color-coded feedback
+- The transaction hash or error message is displayed to the user
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+stellar_connect/
+├── public/
+│   ├── favicon.ico
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── Freighter.js
+│   │   └── Header.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── index.jsx
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── vite.config.js
+└── README.md
+```
 
-### Analyzing the Bundle Size
+## Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
 
-### Making a Progressive Web App
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- This app operates on the **Stellar Testnet**. Ensure your Freighter wallet is switched to Testnet mode.
+- You can request test XLM from the [Stellar Testnet Friendbot](https://friendbot.stellar.org/) if needed.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
