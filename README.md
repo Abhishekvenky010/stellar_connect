@@ -155,6 +155,26 @@ The application handles the following error cases:
 4. **Report not found** - When accessing a non-existent report
 5. **Unauthorized** - When a non-owner tries to confirm recovery
 6. **Invalid status transition** - When trying to mark an already found/recovered item
+### Wallet Connected State
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4fd13aea-e993-4a3c-8b63-74dd3256ca6b" />
+
+- The header displays the connected wallet address and current XLM balance
+- The Disconnect button is visible
+
+### Balance Displayed
+
+- The connected wallet's XLM balance is shown next to the truncated public key in the header
+
+### Successful Testnet Transaction
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/de96d202-077d-47d4-ab39-a176c2b27847" />
+
+- The transaction form shows a green success banner after submission
+- A link to the transaction hash on Stellar Expert is provided
+
+### Transaction Result Shown to User
+
+- Success/failure state is clearly indicated with color-coded feedback
+- The transaction hash or error message is displayed to the user
 
 ## Project Structure
 
