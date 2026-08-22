@@ -28,7 +28,7 @@ A Soroban-powered Lost & Found platform built on the Stellar Testnet. Report los
 ### Contract Address
 
 ```
-CAIFCSOJYGP6I7U2GDZ646C4P5HMXCA4M2376J25S2F6ULDYNJHAXU7K
+CC2OOKGO77PNP5SCGAC27IR3DRMQ32JT5KFGEWGNER7MGW6565MEJ3GA
 ```
 
 ### Contract Functions
@@ -91,11 +91,11 @@ stellar contract deploy --source deployer --network testnet
 
 ### Example Transaction Hashes
 
-- Contract Deployment: `bc466da886568522331455d1fc7f14d8bbd9679c20efe03248a6310680f30654`
-  - https://stellar.expert/explorer/testnet/tx/bc466da886568522331455d1fc7f14d8bbd9679c20efe03248a6310680f30654
+- Contract Deployment: `c6b4790a0a0bc96c29c9ef02bd84ca8d116dd547a4152b334ea367577cad2fa1`
+  - https://stellar.expert/explorer/testnet/tx/c6b4790a0a0bc96c29c9ef02bd84ca8d116dd547a4152b334ea367577cad2fa1
 
-- Contract WASM Upload: `249a9a020372353c2f6b11210f1fda0c36fc3b8ea80825d7de6b1643e58d93b6`
-  - https://stellar.expert/explorer/testnet/tx/249a9a020372353c2f6b11210f1fda0c36fc3b8ea80825d7de6b1643e58d93b6
+- Contract WASM Upload: `367c0a1283e018c71b14469b019d5fe4cf8556dcd9a6b65f0de67e81d420396f`
+  - https://stellar.expert/explorer/testnet/tx/367c0a1283e018c71b14469b019d5fe4cf8556dcd9a6b65f0de67e81d420396f
 
 ## Setup Instructions
 
@@ -238,7 +238,7 @@ cargo test
 ## Blockchain Explorer
 
 View contract and transactions on Stellar Expert:
-- Contract: https://stellar.expert/explorer/testnet/contract/CAIFCSOJYGP6I7U2GDZ646C4P5HMXCA4M2376J25S2F6ULDYNJHAXU7K
+- Contract: https://stellar.expert/explorer/testnet/contract/CC2OOKGO77PNP5SCGAC27IR3DRMQ32JT5KFGEWGNER7MGW6565MEJ3GA
 - Deployer: https://stellar.expert/explorer/testnet/account/GAY3G6VTLIHK5C4NLAJOG65YVYQAXG7LKFHTQPTQKCTX4TZACJAMJWCN
 
 ## Screenshots

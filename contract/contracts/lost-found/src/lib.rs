@@ -1,7 +1,7 @@
 #![no_std]
 use soroban_sdk::{
     contract, contracterror, contractimpl, contracttype,
-    Address, Env, String, Vec, vec, panic_with_error,
+    Address, Env, String, Vec, vec, panic_with_error, Symbol, symbol_short,
 };
 
 #[contract]
@@ -30,7 +30,7 @@ pub struct Report {
     pub created_at: u64,
 }
 
-const REPORTS_KEY: u64 = 0;
+const REPORTS_KEY: Symbol = symbol_short!("REPORTS");
 
 #[contractimpl]
 impl LostFoundContract {
