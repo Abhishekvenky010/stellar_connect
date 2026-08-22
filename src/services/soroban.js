@@ -111,8 +111,13 @@ export const getReports = async (publicKey) => {
   try {
     const client = await getClient(publicKey);
     const result = await client.get_reports();
-    return result.result || [];
+    console.log('[soroban] get_reports raw result:', result);
+    console.log('[soroban] get_reports result.result:', result.result);
+    const unwrapped = result.result?.unwrap?.() || result.result || [];
+    console.log('[soroban] get_reports unwrapped:', unwrapped);
+    return unwrapped;
   } catch (e) {
+    console.error('[soroban] get_reports error:', e);
     throw new Error('Contract execution failed: ' + (e.message || e));
   }
 };
