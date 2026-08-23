@@ -242,22 +242,10 @@ View contract and transactions on Stellar Expert:
 - Deployer: https://stellar.expert/explorer/testnet/account/GAY3G6VTLIHK5C4NLAJOG65YVYQAXG7LKFHTQPTQKCTX4TZACJAMJWCN
 
 ## Screenshots
+<img width="1912" height="821" alt="image" src="https://github.com/user-attachments/assets/464708ff-6dd7-49aa-abdc-7e29c9a227cd" />
 
-### Home Page
-- Feature cards explaining the Lost & Found workflow
-- Connect wallet buttons for Freighter and xBull
+<img width="1910" height="782" alt="image" src="https://github.com/user-attachments/assets/a149e452-9795-46ce-a870-13ab08b9b40d" />
 
-### Create Report
-- Form to submit lost item details
-- Transaction status with explorer link
-
-### Reports List
-- All reports displayed with status badges
-- Action buttons for marking items as found
-
-### Report Details
-- Full report information
-- Owner-only recovery confirmation
 
 ## Notes
 
